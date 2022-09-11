@@ -82,5 +82,23 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+PRODUCT_PACKAGES += fstab.mt6765
+PRODUCT_PACKAGES += factory_init.connectivity.rc
+PRODUCT_PACKAGES += factory_init.project.rc
+PRODUCT_PACKAGES += factory_init.rc
+PRODUCT_PACKAGES += init.aee.rc
+PRODUCT_PACKAGES += init.connectivity.rc
+PRODUCT_PACKAGES += init.modem.rc
+PRODUCT_PACKAGES += init.mt6765.rc
+PRODUCT_PACKAGES += init.mt6765.usb.rc
+PRODUCT_PACKAGES += init.project.rc
+PRODUCT_PACKAGES += init.sensor_1_0.rc
+PRODUCT_PACKAGES += meta_init.connectivity.rc
+PRODUCT_PACKAGES += meta_init.modem.rc
+PRODUCT_PACKAGES += meta_init.project.rc
+PRODUCT_PACKAGES += meta_init.rc
+PRODUCT_PACKAGES += multi_init.rc
+PRODUCT_PACKAGES += ueventd.rc
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
