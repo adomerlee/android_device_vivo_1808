@@ -26,6 +26,10 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
+# Display
+TARGET_USES_HWC2 := true
+TARGET_USES_ION  := true
+
 # Bootloaer
 TARGET_NO_BOOTLOADER := true
 
