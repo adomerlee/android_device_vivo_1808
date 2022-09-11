@@ -119,5 +119,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libaudiopreprocessing
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
