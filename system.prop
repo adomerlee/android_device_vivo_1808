@@ -1,0 +1,57 @@
+# Audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# Vivo
+ro.vivo.oem.name=PD1732DF_EX_RU_NULL_NULL
+ro.vivo.product.version=PD1732DF_EX_A_2.7.12
+ro.hardware.bbk=PD1732F_EXMA
+ro.vivo.hardware.version=PD1732F_EXMA
+ro.board.bbk=MA
+ro.vivo.product.solution=MTK
+ro.vivo.product.platform=MTK6765
+ro.vivo.board.version=MA
+
+# Radio
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+persist.vivo.radio.type.abbr=F
+persist.vivo.radio.type.list=WCDMA,TDD-LTE,FDD-LTE,GSM
+persist.radio.vivo.volte=3
+persist.radio.vivo.volte.sim2=3
+persist.radio.volte.deafult=1
+persist.radio.vivo.premiumsms=true
+persist.radio.cs_srv_type=true
+persist.vendor.radio.cs_srv_type=true
+
+# Wi-Fi
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+
+# IPO
+sys.ipo.disable=1
+
+# Power
+sys.ipo.pwrdncap=2
+
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+
+# Display
+ro.opengles.version=196610
+
+# Camera
+vendor.camera.vivopackagelist=com.android.camera
+vendor.camera.mtkpackagelist=com.android.camera,
+persist.vendor.camera.privapp.list=com.android.camera
