@@ -123,5 +123,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Charger
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0 \
+    libsuspend
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
