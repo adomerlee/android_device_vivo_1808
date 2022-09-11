@@ -66,4 +66,8 @@ BOARD_VNDK_VERSION := current
 BOARD_VNDK_RUNTIME_DISABLE := true
 PRODUCT_FULL_TREBLE := true
 
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
+
 include vendor/vivo/1808/BoardConfigVendor.mk
