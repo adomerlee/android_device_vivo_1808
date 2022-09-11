@@ -178,5 +178,16 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.supplicant@1.0 \
+    android.hardware.wifi@1.0-service-lazy \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl
+
+PRODUCT_PACKAGES += \
+    TetheringResOverlay \
+    WifiResOverlay
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
