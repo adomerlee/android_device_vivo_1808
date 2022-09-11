@@ -17,6 +17,10 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 # GPU
 MTK_GPU_VERSION := rgx doma m1.9ED4940716
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Audio policy configuration
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_COPY_FILES += \
