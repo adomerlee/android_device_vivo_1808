@@ -163,5 +163,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
