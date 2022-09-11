@@ -140,5 +140,12 @@ PRODUCT_PACKAGES += \
     libvulkan \
     libtinyxml
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    MtkFMRadio \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio@1.0 \
+    android.hardware.radio@1.1
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
