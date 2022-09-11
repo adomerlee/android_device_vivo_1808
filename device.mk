@@ -189,5 +189,10 @@ PRODUCT_PACKAGES += \
     TetheringResOverlay \
     WifiResOverlay
 
+# Net
+PRODUCT_PACKAGES += \
+    libcurl \
+    libandroid_net
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
