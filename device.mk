@@ -100,5 +100,24 @@ PRODUCT_PACKAGES += meta_init.rc
 PRODUCT_PACKAGES += multi_init.rc
 PRODUCT_PACKAGES += ueventd.rc
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.service \
+    android.hardware.soundtrigger@2.0-impl
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.primary.default \
+    audio.primary.mt6765 \
+    audio.r_submix.default \
+    audio.r_submix.mt6765 \
+    audio.usb.default \
+    audio.usb.mt6765
+
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing
+
 # Inherit vendor
 $(call inherit-product, vendor/vivo/1808/1808-vendor.mk)
