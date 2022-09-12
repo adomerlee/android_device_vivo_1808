@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage_1808.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_1808-user \

@@ -18,8 +18,4 @@
 <resources>
 	<dimen name="rounded_corner_radius">4dp</dimen>
     <dimen name="rounded_corner_content_padding">8dp</dimen>
-    <dimen name="volume_offset_top">84px</dimen>
-    <dimen name="status_bar_header_height">164dp</dimen>
-    <dimen name="status_bar_header_height_expanded">164dp</dimen>
-    <dimen name="status_bar_header_height_keyguard">80px</dimen>
 </resources>

@@ -86,6 +86,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
+
 PRODUCT_PACKAGES += fstab.mt6765
 PRODUCT_PACKAGES += factory_init.connectivity.rc
 PRODUCT_PACKAGES += factory_init.project.rc
