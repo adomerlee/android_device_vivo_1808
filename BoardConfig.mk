@@ -37,6 +37,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE  := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE  := skip_initramfs rootwait ro init=/init root=/dev/dm-0 dm=\"system none ro,0 1 /dev/block/mmcblk0p39\"
 BOARD_KERNEL_BASE     := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET  := 0x14f88000
@@ -79,8 +80,11 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE   := ext4
 
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 53

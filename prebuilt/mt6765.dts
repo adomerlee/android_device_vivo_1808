@@ -3060,22 +3060,6 @@
 
 			fstab {
 				compatible = "android,fstab";
-
-				system {
-					compatible = "android,system";
-					dev = "/dev/block/platform/bootdevice/by-name/system";
-					type = "ext4";
-					mnt_flags = "ro";
-					fsmgr_flags = "wait";
-				};
-
-				vendor {
-					compatible = "android,vendor";
-					dev = "/dev/block/platform/bootdevice/by-name/vendor";
-					type = "ext4";
-					mnt_flags = "ro";
-					fsmgr_flags = "wait";
-				};
 			};
 		};
 	};
